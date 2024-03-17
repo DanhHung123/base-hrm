@@ -1,0 +1,122 @@
+@import "./variable";
+
+.button-primary {
+  color: $color-white !important;
+  min-width: 80px;
+  background-color: $color-bright-cyan !important;
+  border-radius: 4px;
+  padding: 5px 10px !important;
+  font-size: 14px;
+  height: 32px;
+  line-height: 24px;
+  border: none;
+
+  &:hover {
+    background-color: $color-steel-blue !important;
+  }
+
+  &:focus {
+    background-color: $color-steel-blue ;
+    box-shadow: 0px 0px 0px 4px $color-light-cyan-active;
+  }
+
+  &:disabled {
+    background-color: $color-border-table !important;
+    border-radius: 4px;
+    color: $color-text-disabled !important;
+  }
+}
+
+.button-primary-outline {
+  min-width: 80px;
+  background: $color-white !important;
+  color: $color-bright-cyan !important;
+  border: 1px solid $color-bright-cyan !important;
+  padding: 4px 9px !important;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 32px;
+  line-height: 24px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    // --kt-primary-active: $color-steel-blue;
+    color: $color-steel-blue !important;
+    background: $color-light-cyan-active !important;
+  }
+
+  &:disabled {
+    background-color: $color-border-table !important;
+    border-radius: 4px;
+    color: color-text-disabled;
+    pointer-events: none !important;
+  }
+}
+
+.button-low-primary {
+  border: 1px solid #519DD9 !important;
+  color: #519DD9;
+
+  &:hover {
+    border: 1px solid #2B6DBA !important;
+    color: #2B6DBA !important;
+    background-color: white;
+  }
+
+  &:focus {
+    border: 1px solid #0D47A1 !important;
+    color: #0D47A1 !important;
+    box-shadow: 0px 0px 0px 4px #D3EAF3 !important;
+  }
+
+  &:disabled {
+    border: 1px solid #CFCFCF;
+    color: #CFCFCF;
+  }
+}
+
+.button-secondary {
+  border: 1px solid #CFCFCF !important;
+  background-color: white;
+}
+
+.button-gray-outline {
+  min-width: 80px;
+  background: $color-white !important;
+  color: $color-gunmetal-gray !important;
+  border: 1px solid $color-gunmetal-gray !important;
+  padding: 4px 9px !important;
+  font-size: 14px;
+  border-radius: 4px;
+  opacity: 0.7;
+  height: 32px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: $color-dark-blur-2 !important;
+  }
+
+  &:disabled {
+    background-color: $color-border-table !important;
+    border-radius: 4px;
+    color: color-text-disabled;
+    pointer-events: none !important;
+  }
+}
+
+.button-delete {
+  color: $color-white !important;
+  min-width: 80px;
+  background-color: $color-dark-red !important;
+  border-radius: 4px;
+  padding: 5px 10px !important;
+  font-size: 14px;
+  border: none;
+  height: 32px;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.7 !important;
+  }
+}

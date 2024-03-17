@@ -1,0 +1,43 @@
+                            {listDegree.length !== 0 && (
+                                <table className="table text-center custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'TABLE.INDEX' })}
+                                            </th>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'INPUT.DEGREE.SPECIALIZED' })}
+                                            </th>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'INPUT.DEGREE.LEVEL' })}
+                                            </th>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'INPUT.DEGREE.PLACETRAINING' })}
+                                            </th>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'INPUT.DEGREE.RANK' })}
+                                            </th>
+                                            <th className="bg-primary text-white">
+                                                {intl.formatMessage({ id: 'TABLE.ACTION' })}
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {listDegree.map((item: DegreeInfoOutPut, index) => (
+                                            <tr key={index}>
+                                                <td className="col-1">{index + 1}</td>
+                                                <td className="col-3">{item.chuyenNganhText}</td>
+                                                <td className="col-2">{item.trinhDoText}</td>
+                                                <td className="col-2">{item.noiDaoTaoText}</td>
+                                                <td className="col-1">{item.xepLoaiText}</td>
+                                                <td className="col-1 text-center">
+                                                    <i className="fa-solid fa-pen text-primary me-5 icon-hover" onClick={e 									=> handleEditDegree(item)}></i>
+                                                    <i className="fa-solid fa-trash text-danger icon-hover"
+                                                        onClick={e => handleDeleteDegree(item.id)}
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            )}

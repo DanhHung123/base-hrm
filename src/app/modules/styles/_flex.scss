@@ -1,0 +1,11 @@
+.grid-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.flex-near{
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: start;
+}

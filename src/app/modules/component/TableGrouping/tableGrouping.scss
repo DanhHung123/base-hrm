@@ -1,0 +1,23 @@
+@import '../../../modules/styles/variable';
+
+.table-group {
+  overflow: auto;
+  .chervon-rotate-down {
+    transform: rotate(90deg);
+  }
+
+  .transition-linear {
+    transition: all 0.25s linear;
+  }
+  
+  .sticky-column {
+    position: sticky !important;
+  }
+
+  .title-cell-sticky {
+    position: sticky !important;
+    left: 0px;
+    width: fit-content;
+    padding-left: 1rem;
+  }
+}

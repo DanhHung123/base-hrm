@@ -1,0 +1,381 @@
+@import '../../modules/styles/variable';
+
+.bg-pri {
+  background-color: $color-bright-cyan;
+  color: white;
+
+  &:hover {
+    background-color: $color-light-cyan-active;
+  }
+}
+
+.text-pri {
+  color: $color-bright-cyan;
+}
+
+.footer-select {
+  width: 72px;
+}
+
+.noWrap {
+  white-space: 'nowrap';
+}
+
+.text-system {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #333 !important;
+}
+
+.select-invalid>* {
+  color: red !important;
+  border-color: red !important;
+}
+
+.buttonInput {
+  padding: 6px 14px !important;
+  margin-right: -5px
+}
+
+.inputAdornment {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.app-sidebar-menu .menu-item .menu-link {
+  padding: 6px 14px !important;
+  font-size: 14px;
+}
+
+.app-sidebar-menu .menu-sub .menu-item .menu-link {
+  padding: 6px 14px 6px 38px !important;
+  font-size: 14px;
+}
+
+.app-sidebar-menu .menu-item .menu-link.parent {
+  padding: 6px 14px 6px 10px!important;
+}
+
+.app-header-menu {
+  .menu-item {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+
+    .menu-link {
+      padding: 13px 20px;
+    }
+  }
+}
+
+//table fiexd
+.customs-collapse-row {
+  font-size: 13px;
+
+  .checkBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px !important;
+      cursor: pointer;
+    }
+  }
+
+  .checkRadio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #5E6278;
+      cursor: pointer;
+    }
+  }
+
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table-row-dashed {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-steel-blue !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1 !important;
+  }
+
+  &:hover::-webkit-scrollbar {
+    height: 10px !important;
+    cursor: pointer;
+  }
+
+  .p-table {
+    padding: .6rem !important;
+  }
+
+  .td-vertical-center {
+    text-align: center;
+    vertical-align: middle !important;
+  }
+}
+
+//input search
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px #CED4DA solid;
+  border-radius: 6px;
+}
+
+.searchTextField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #A9A9A9;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+
+  &.icon-eye {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: unset;
+    right: 8px;
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  &:hover {
+    i {
+      font-size: 18px;
+      color: #13a7a4;
+    }
+  }
+
+  &.custom-icon-password {
+    i {
+      font-size: 22px;
+    }
+
+    &:hover {
+      i {
+        font-size: 24px;
+        color: #13a7a4;
+      }
+    }
+  }
+}
+
+.treeSelect {
+  .truncate-text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    color: $color-text-table;
+  }
+
+  .rowTreeSelect {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-light-cyan-active;
+    }
+
+    &.active {
+      font-weight: 600;
+      background-color: $color-light-aqua-active;
+    }
+  }
+
+  .svg-icon-folder {
+    svg {
+      color: $color-text-table;
+      width: 14px !important;
+      height: 11px !important;
+    }
+  }
+
+  .svg-icon-file {
+    svg {
+      color: $color-text-table;
+      width: 11px !important;
+      height: 14px !important;
+    }
+  }
+
+  .total-number{
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: 600;
+    width: 18px;
+    width: 16px;
+    padding: 2px;
+    color: white;
+    border: 1px solid $color-steel-blue;
+    color: $color-steel-blue;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.badge {
+  width: 22px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  left: 30px !important;
+}
+
+.check-box-autoComplete {
+  input {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    margin: 0 0 0 5px;
+  }
+}
+
+//tab
+.customs-tabs {
+  background-color: #ffffff !important;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-link {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 3px 8px !important;
+    min-width: 100px;
+    font-size: 14px;
+
+    &.active {
+      background: white;
+      color: $color-bright-cyan !important;
+      font-weight: 700;
+      position: relative;
+
+      i {
+        color: #ececec;
+
+        &:hover {
+          color: #AAAABA;
+        }
+      }
+
+      .label {
+        span {
+          font-size: 14px;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 26px;
+            background: $color-bright-cyan;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+      }
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .label {
+    position: relative;
+
+    i {
+      position: absolute;
+      top: -6px;
+      right: -13px;
+      padding: 10px;
+    }
+  }
+}
+
+.sticky-column {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.custom-tooltip {
+  position: absolute;
+  z-index: 100;
+
+  .tooltip-inner {
+    border-radius: 5px;
+    padding: 4px 6px !important;
+    background-color: $color-steel-blue !important;
+    color: #fff !important;
+  }
+
+  .tooltip-arrow {
+    display: none;
+  }
+}
+
+.text-underline {
+  position: relative;
+  width: 100%;
+  
+  .value {
+      min-height: auto;
+      line-height: 23px;
+      resize: none;
+      overflow-y: hidden;
+      border: none;
+      padding: 5px; 
+      color: #000000;
+  }
+
+  .underline {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      padding-right: 5px;
+      padding-left: 5px;
+      border-bottom: 2px dotted #000000;
+  }
+}

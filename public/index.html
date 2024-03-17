@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+  <!-- Primary Meta Tags -->
+  <title>Phần mềm quản lý nhân sự</title>
+  <meta name="description" content="Giải pháp quản lý nhân sự hiệu quả, hiện đại và dễ sử dụng" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Phần mềm quản lý nhân sự" />
+  <meta property="og:description" content="Giải pháp quản lý nhân sự hiệu quả, hiện đại và dễ sử dụng" />
+  <meta property="og:image" content="%REACT_APP_API_URL%/media/svg/bg-metatag.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Phần mềm quản lý nhân sự" />
+  <meta property="twitter:description" content="Giải pháp quản lý nhân sự hiệu quả, hiện đại và dễ sử dụng" />
+  <meta property="twitter:image" content="%REACT_APP_API_URL%/media/svg/bg-metatag.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/media/logos/favicon.svg"/>
+  <link rel="stylesheet" id="layout-styles-anchor" href="%PUBLIC_URL%/splash-screen.css" />
+</head>
+
+<body id="kt_body" class="page-loading splash-screen mat-typography">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!--begin::Theme mode setup on page load-->
+  <script>
+    if (document.documentElement) {
+      var defaultThemeMode = "system";
+
+      var themeMode = localStorage.getItem("kt_theme_mode_value");
+      if (!themeMode) {
+        if (defaultThemeMode === "system") {
+          themeMode =
+            window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        } else {
+          themeMode = defaultThemeMode;
+        }
+      }
+
+      document.documentElement.setAttribute("data-theme", themeMode);
+    }
+  </script>
+  <!--end::Theme mode setup on page load-->
+
+  <div id="root" style="height: 100%"></div>
+  <div id="splash-screen" class="splash-screen">
+    <img src="%PUBLIC_URL%/media/logos/xHRM_bule.svg" alt="Metronic logo" />
+    <span>Loading ...</span>
+  </div>
+  <div id="root-modals"></div>
+</body>
+
+</html>
